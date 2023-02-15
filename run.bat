@@ -1,3 +1,4 @@
+@echo off
 call genenv
 call cd C:\Users\maste\Documents\Python\WebLogger
 call python main.py
