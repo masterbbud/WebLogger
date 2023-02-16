@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<link rel="stylesheet" type="text/css"
+  href="https://www.se.rit.edu/resources/style-sheets/SEdepartment.css" />
+<script>
+  var course_number = "SWEN-261"; // Change this to be the title of the course
+  var course_title = "Introduction to Software Engineering"; // Change this to be the title of the course
+  var section = ""; // Change this to be the title of the course
+  var page_topic = "TueThurs Schedule";
+  var page_title = course_number + " " + page_topic;
+  var page_heading = '<a href="../index.html" style="text-decoration:none">' + course_number + "<br />" + course_title + '</a>';
+</script>
+
+<!-- Do not change this -->
+<script src="https://www.se.rit.edu/resources/js/se.js"></script>
+<script>
+  document.title = page_title; // No need to change this
+</script>
+
+<!-- Feel free to add custom styles if you like, but we'd rather put it in SEDepartment.css if at all possible -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.2/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.2/jquery.modal.min.css" type="text/css" media="screen" />
+<link href="../css/basic.css" rel="stylesheet" type="text/css">
+<link href="../css/schedule.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.examinfo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ff0000;
+}
+</style>
+<script>
+// define insertion of OpenUP phase explanations
+// applying the jQuery function ($) to a callback adds this callback to the onready event
+  $(function() {
+    $("#inception_explain").load("../topics/OpenUP-Inception.html");
+    $("#elaboration_explain").load("../topics/OpenUP-Elaboration.html");
+    $("#construction_explain").load("../topics/OpenUP-Construction.html");
+    $("#transition_explain").load("../topics/OpenUP-Transition.html");
+  $("#sec04").load("FreshSem-sec04.html");
+  $("#sec05").load("FreshSem-sec05.html");
+  $("#sec07").load("FreshSem-sec07.html");
+  $("#sec09").load("FreshSem-sec09.html");
+  $("#sec11").load("FreshSem-sec11.html");
+  $("#sec12").load("FreshSem-sec12.html");
+  });
+</script>
+</head>
+<body>
+<div class="modal" id="inception_explain"></div>
+<div class="modal" id="elaboration_explain"></div>
+<div class="modal" id="construction_explain"></div>
+<div class="modal" id="transition_explain"></div>
+<div class="modal" id="sec04"></div>
+<div class="modal" id="sec05"></div>
+<div class="modal" id="sec07"></div>
+<div class="modal" id="sec09"></div>
+<div class="modal" id="sec11"></div>
+<div class="modal" id="sec12"></div>
+<header> <a href="https://www.se.rit.edu" title="Software Engineering Department"> <img src="https://www.se.rit.edu/resources/images/se_logo.png"> </a>
+  <h1><script>document.write(page_heading);</script></h1>
+  <div class="clear"></div>
+</header>
+<nav>
+  <ul>
+    <li><a href="#">Schedule</a></li>
+    <li><a href="../00/syllabus.html">Syllabus</a></li>
+    <li><a href="../projects/project.html">Project</a></li>
+    <li><a href="../resources/resources.html">Resources</a></li>
+  </ul>
+</nav>
+<article>
+  <header> </header>
+  <br>
+  <br>
+  <!-- Can change this if you see fit --> 
+</article>
+<h2> Class Schedule - 2225 SPRING TUES and THUR</h2>
+
+
+<table class="gridtable">
+  <thead>
+    <tr>
+      <th width="153">Topic</th>
+      <th width="318">Class Activity</th>
+      <th width="356">Assignments<br/> (due <u>end of day at 11:59 PM EST after</u> class unless specified)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- BEGIN INCEPTION -->
+    <tr id="week1" class="inception">
+      <td colspan="3" id="inception"><div align="center" style="font-size:large"><a href="#inception_explain" rel="modal:open">Inception</a></div></td>
+    </tr>
+    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+        * * Reminder-NO CLASSES MONDAY January 16 observance of Martin Luther King Jr. Day - </div></td>
+    </tr>
+    <tr class="inceptionlight">
+      <td id="session1" colspan="3"><div style="font-size:medium">
+      Session 01<br>
+      <strong>TUE</strong>day, Jan 17</div></td>
+    </tr>
+    <tr class="inceptionlight">
+        <td><a href="../topics/CourseOverview.html">Course overview</a></td>
+        <td>&nbsp;</td>
+        <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/CourseOverview.html#ex_crs_over_q">Course overview - quiz</a><br\></td>
+    </tr>
+    <tr class="inceptionlight">
+        <td><a href="../topics/Appreciation for Process.html">Appreciation for Software Development Process</a></td>
+        <td>&nbsp;</td>
+        <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Appreciation for Process.html#ex_app_proc_q">Appreciation for software development process - quiz</a><br\></td>
+    </tr>
+    <tr class="inceptionlight endofweek">
+      <td><a href="../topics/OpenUP Phases.html">Introduction to Inception</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+
+    <tr class="inceptiondark">
+      <td id="session2" colspan="3"><div style="font-size:medium">Session 02<br>
+      <strong>THURS</strong>day, Jan 19</div></td>
+    </tr>
+    <tr class="inceptiondark">
+      <td><a href="../topics/Team Formation.html">Team formation</a></td>
+      <td>&nbsp;</td>
+      <td>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Team Formation.html#ex_team_form_q">Team formation - quiz</a><br/><br/>
+        <span class="datefont"><i> Jan 20 </i></span></i><a href="../topics/Team%20Formation.html#ex_team_form_i">Team Formation survey - individual</a><br/></td><br/>
+    </tr>
+
+    <tr class="inceptiondark">
+      <td><a href="../topics/Domain Analysis.html">Domain Analysis</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../topics/Domain Analysis.html#ex_domain_class">Domain analysis - class activity</a></td></span>
+      <td>
+        <span class="datefont">Jan 24 </span><a href="../topics/Domain Analysis.html#ex_domain_i">Domain analysis - individual</a><br/>
+        <span class="datefont"><i><br>draft<br/> Jan 26</i></span> <a href="../topics/Domain Analysis.html#ex_domain_s0">Domain analysis - team</a><span class="datefont"> final version @ <strong>S0</strong></span><br/>
+      </td>
+      </td>
+    </tr>
+
+<!--
+    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+        * * Reminder-NO CLASSES January 17 observance of Martin Luther King Jr. Day - </div></td>
+    </tr>
+-->
+
+    <tr class="inceptionlight">
+      <td id="session3" colspan="3"><div style="font-size:medium">Session 03<br>
+      <strong>TUE</strong>day, Jan 24</div></td>
+    </tr>
+
+    <tr class="inceptionlight endofweek">
+      <td><a href="../topics/REST Basics.html">REST Basics</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/REST Basics.html#ex_rest_build_i">REST Starter code</a><br\></td>
+      <td>
+        <span class="datefont">START OF CLASS</span> <a href="../topics/REST Basics.html#ex_rest_env_i">Setup REST API build environment</a><br/>
+        <span class="datefont">Feb 2 </span><a href="../topics/REST Basics.html#ex_rest_i">REST API Basics (Spike) - individual</a><br/>
+      </td>
+    </tr>    
+   
+    <tr class="inceptiondark">
+      <td id="session4" colspan="3"><div style="font-size:medium">Session 04<br>
+      <strong>THURS</strong>day, Jan 26</div></td>
+    </tr>
+    </tr>
+    <tr class="inceptiondark">
+      <td><a href="../topics/Effective Team Communications.html">Effective team communications</a></td>
+                  <td></td>
+        <td>
+          <span class="datefont"><i>Jan 31</i></span> <a href="../topics/Effective Team Communications.html#ex_slack_t">Setup Slack Workspace - team</a><br>
+          <span class="datefont"><i>Jan 31</i></span> <a href="../topics/Sprint Planning.html#trello_setup">Trello team - team</a></td>
+        </td>
+    </tr> 
+      
+    </tr>
+    <tr class="inceptiondark endofweek">
+      <td><a href="../topics/Defining Project Requirements.html">Defining project requirements</a></td>
+      <td>&nbsp;</td>
+      <td>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Defining Project Requirements.html#ex_def_reqs_q">Defining project requirements - quiz</a></br>
+        <span class="datefont"><i>Jan 31</i></span></span> <a href="../topics/Defining Project Requirements.html#ex_def_reqs_i">Defining project requirements - individual</a>
+      </td>
+    </tr>  
+    
+<!--
+    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+* * Reminder-NO CLASSES MONDAY September 5 - in observance of LABOR DAY -</div></td>
+    </tr>
+-->
+
+    <tr class="inceptionlight">
+      <td id="session6" colspan="3"><div style="font-size:medium">
+      Session 05<br>
+      <strong>TUE</strong>day, Jan 31</div></td>
+    </tr>
+
+    <tr class="inceptionlight endofweek">
+      <td><a href="../topics/Review OO Concepts.html">Review Object-Oriented Concepts</a></td>
+      <td></td>
+      <td></td>
+    </tr> 
+
+     <tr class="inceptiondark">
+      <td id="session6" colspan="3"><div style="font-size:medium">
+      Session 06<br>
+      <strong>THURS</strong>day, Feb 2</div></td>
+    </tr>
+
+    <tr class="inceptiondark endofweek">
+      <td><a href="../topics/Object-Oriented Design.html">OO Design</a></td>
+      <td></td>
+      <td>
+        <span class="datefont">START OF CLASS</span> <a href="../projects/Sprint_0_details.html"><b>Sprint 0 due</b></a><br/>
+	<span class="datefont">.Feb 14</span><strong><!--we could bump one session --></strong> <a href="../topics/Object-Oriented Design.html#ex_ood1_i">Object-oriented design I - individual</a>
+      </td>
+    </tr> 
+
+
+    <tr id="week4" class="elaboration">
+      <td colspan="3" id="elaboration"><div align="center" style="font-size:large"><a href="#elaboration_explain" rel="modal:open">Elaboration</a></div></td>
+    </tr>    
+          
+    <tr class="elaborationlight">
+      <td id="session7" colspan="3"><div style="font-size:medium">
+      Session 07<br>
+      <strong>TUE</strong>day, Feb 7</div></td>
+    </tr>
+    </tr>
+    <tr class="elaborationlight">
+      <td><a href="../topics/OpenUP-Elaboration.html">Introduction to Elaboration</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+    </tr>
+    <tr class="elaborationlight">
+      <td><a href="../topics/Sprint Planning.html">Sprint Planning</a></td>
+      <td></td>
+      <td>
+        <span class="datefont"><i>Feb 9 </i></span><a href="../topics/Version Control Concepts.html#ex_github_t">GitHub repository - team</a><br/><br/>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../topics/Sprint Planning.html#ex_sp_plan_q">Sprint Planning - quiz</a><br/>
+         <span class="datefont">.*Feb 10 </span> <a href="../projects/Sprint planning.html#ex_plan_s1">Sprint 1 plan - team</a>
+      </td>
+      </td>
+    </tr> 
+    
+    <tr class="elaborationlight endofweek">
+      <td><a href="../topics/Appreciation for Architecture.html">Appreciation for software architecture</a></td>
+      <td></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Appreciation for Architecture.html#ex_sw_arch_q">Appreciation for  software architecture - quiz</a></td>
+    </tr> 
+
+
+
+<tr class="elaborationdark">
+      <td id="session8" colspan="3"><div style="font-size:medium">
+      Session 08<br>
+      <strong>THURS</strong>day, Feb 9</div></td>
+    </tr>
+  <tr class="elaborationdark endofweek">
+      <td><a href="../topics/Angular Basics.html">Angular Basics</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Angular Basics.html#ex_ang_act1_i">Angular Tutorial - Part 1 (starts in class)</a> <strong>*ask Instructor when due</strong></td>
+      <td><span class="datefont">START OF CLASS</span> <a href="../topics/Angular Basics.html#ex_ang_setup_i">Angular Setup</a></td>
+      </tr>  
+    </tr>  
+
+
+    <tr class="elaborationlight">
+      <td id="session9" colspan="3"><div style="font-size:medium">
+      Session 09<br>
+      <strong>TUE</strong>day, Feb 14</div></td>
+    </tr>
+
+    <tr class="elaborationlight">
+      <td> <!-- swapped Giving Sprint Demos with Version control concepts -->
+        
+        <a href="../topics/Version Control Concepts.html">Version control concepts</br>
+      </td>
+      <td></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Version Control Concepts.html#ex_version_control_q">Version control concepts - quiz</a><br/></td> 
+    </tr>
+
+      <tr class="elaborationlight endofweek">
+      <td>
+        <a href="../topics/Angular Advanced.html">Angular Advanced</a>
+      </td>
+      <td></td>
+      <td><span class="datefont"><i></i></span><a href="../topics/Angular Advanced.html#ex_ang_act2_i">Start Angular Tutorial - Part 2 for Spike due on Feb 21</a></td> 
+      </tr>
+
+
+    <tr class="elaborationdark">
+      <td id="session10" colspan="3"><div style="font-size:medium">Session 10<br>
+      <strong>THURS</strong>day, Feb 16</div></td>
+    </tr>
+
+    <tr class="elaborationdark">
+      <td>
+ <!-- swapped Giving Sprint Demos with Version control concepts -->
+        <a href="../topics/Sprint Demo.html">Giving Sprint Demos</a></br>
+      </td>
+      <td></td>
+      <td></td>
+    </tr> 
+    <tr class="elaborationdark endofweek">
+      <td><a href="../topics/Backlog Refinement and Estimation.html">Backlog Refinement and Estimation</a></td>
+      <td></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Backlog Refinement and Estimation.html#ex_version_control_q">Backlog Refinement and estimation - quiz</a><br/><br/>
+    </tr> 
+        
+    <tr id="week11"class="construction">
+      <td colspan="3" id="construction"><div align="center" style="font-size:large"><a href="#construction_explain" rel="modal:open">Construction</a></div></td>
+    </tr>
+
+    <tr class="constructionlight">
+      <td id="session11" colspan="3"><div style="font-size:medium">
+      Session 11<br>
+      <strong>TUE</strong>day, Feb 21</div></td>
+    </tr>
+    </tr>  
+    <tr class="constructionlight">
+      <td><a href="../topics/OpenUP Phases.html#ConstructionPhase">Introduction to Construction</a></td>
+      <td></td> 
+      <td></td>
+    </tr>
+    <tr class="constructionlight endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../projects/Sprint1 demos.html#ex_sprint_demo">Sprint 1 demos</a><br/>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Backlog Refinement and Estimation.html#ex_s2planning_t">Sprint 2 planning</a>
+      </td> 
+      <td>
+        <span class="datefont">START OF CLASS</span><a href="../projects/Sprint_1_details.html"><b>  Sprint 1 due</b></a><br/>
+        <span class="datefont">Feb 21 </span> <a href="../topics/Angular Advanced.html#ex_ang_act3_i"> Angular tutorial (Spike) - individual</a></br>
+        <br/>
+         <span class="datefont">Feb 21 </span> <a href="../projects/Sprint planning.html#ex_plan_s2_3">Sprint 2 plan - team</a></td>
+      </td>
+    </tr>
+
+    <tr class="constructiondark">
+      <td id="session12" colspan="3"><div style="font-size:medium">
+      Session 12<br>
+      <strong>THURS</strong>day, Feb 23</div></td>
+    </tr>  
+
+    <tr class="constructiondark">
+      <td><a href="../topics/Design and Code Communication and Code Review.html">Design and Code Communication & Code Reviews</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br\></td>
+      <td>
+        <span class="datefont">** Mar 7 </span> <a href="../topics/Design and Code Communication and Code Review.html#ex_code_review_t#ex_code_review_t">Code review - team</a></td>
+      </td>
+    </tr> 
+
+    <tr class="constructiondark endofweek">
+      <td><a href="../topics/Acceptance Testing.html">Acceptance Testing</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../topics/Acceptance Testing.html#ex_accept_test_q">Acceptance Testing - quiz</a>
+    </tr>
+
+    <tr class="constructionlight">
+      <td id="session13" colspan="3"><div style="font-size:medium">
+      Session 13<br>
+      <strong>TUE</strong>day, Feb 28</div></td>
+    </tr>
+
+    <tr class="constructionlight endofweek">
+      <td><a href="../topics/Unit Testing.html">Unit Testing</a>
+      </td><td>
+      <td>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../topics/Unit Testing.html#ex_unit_test_q">Unit Testing - quiz</a><br/>
+        <span class="datefont"><i>** Mar 7 </i></span><a href="../topics/Unit Testing.html#ex_unit_test_i">Unit Testing - individual</a><br/>
+      </td>  
+    </tr>
+
+    <tr class="constructiondark">
+      <td id="session14" colspan="3"><div style="font-size:medium">
+      Session 14<br>
+      <strong>THURS</strong>day, Mar 2</div></td>
+    </tr>
+
+
+    <tr class="constructiondark">
+      <td><a href="../topics/Code Coverage.html">CI/CD basics & Code Coverage</a>
+      </td>
+      <td></td>
+      <td>
+        <span class="datefont"><i>** Mar 7 </i></span><a href="../topics/Code Coverage.html#ex_code_cover_t">Code Coverage - team</a>
+      </td>
+    </tr>
+    
+    <tr class="constructiondark endofweek">
+      <td><a href="../exams/Exam 1 Study Guide.html">Midterm Exam Review</a></td>
+      <td></td>
+      <td></td>
+
+<!--    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+* * Reminder-NO CLASSES MON->TUE Oct 10 and 11 - in observance of FALL BREAK -</div></td>
+    </tr>
+-->
+
+    <tr class="constructionlight">
+      <td id="session15" colspan="3"><div style="font-size:medium">
+      Session 15<br>
+      <strong>Tues</strong>day, Mar 7</div></td>
+    </tr>
+
+    <tr class="constructionlight endofweek">
+      <td><a href="../exams/Exam 1 Study Guide.html">Midterm Exam</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td></td>
+    </tr>
+
+    <tr class="constructiondark"> 
+      <td id="session16" colspan="3"><div style="font-size:medium">Session 16<br>
+      <strong>Thurs</strong>day, Mar 9</div></td>
+    </tr>
+    <tr style="font-weight:bold;" class="Constructionlight">
+    </td>
+    <tr class="constructiondark endofweek">
+      <td><a href="../topics/Design Documentation.html">Design documentation</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td><span class="datefont">Mar 21 </span> <a href="../topics/Design Documentation.html#ex_design_doc_t">Design documentation - team</a></td>
+    </tr>
+<!--
+    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+        - NO CLASSES MON->FRI Mar 7 to 11 - in observance of SPRING BREAK -</div></td>
+    </tr>
+ -->
+    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+        - NO CLASSES MON->FRI Mar 13 to 17 - in observance of SPRING BREAK -</div></td>
+    </tr>
+    <tr class="constructionlight">
+      <td id="session17" colspan="3"><div style="font-size:medium">
+      Session 17<br>
+      <strong>Tues</strong>day, Mar 21</div></td>
+    </tr>
+    
+      <tr class="constructionlight endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td>
+	      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	      <!--<a href="../projects/Sprint presentations.html#ex_sprint2_pres"> Sprint 2 presentations</a>-->
+	      <a href="../projects/Sprint2 demos.html#ex_sprint_demo">Sprint 2 demos</a><br/>
+
+      </td>
+      <td>
+        <span class="datefont">START OF CLASS</span><a href="../projects/Sprint_2_details.html"><b>  Sprint 2 due</b></a><br/>
+        <br/>
+         <span class="datefont">Mar 21 </span> <a href="../projects/Sprint planning.html#ex_plan_s2_3">Sprint 3 plan - team</a></td>
+      </td>
+    </tr>
+
+
+    <tr class="constructiondark">
+      <td id="session18" colspan="3"><div style="font-size:medium">
+      Session 18<br>
+      <strong>Thurs</strong>day, Mar 23</div></td>
+    </tr>
+
+    <tr class="constructiondark">
+      <td><a href="../topics/Appreciation for Usability.html">Appreciation for Usability</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td>
+        <span class="datefont"><br>midnight tomorrow<br>Mar 24</span> <a href="../topics/Appreciation for Usability.html#ex_appr_ui_t">Appreciation for usability - team</a></td>
+
+    </tr>
+    <tr class="constructiondark endofweek">
+      <td><a href="../topics/Sprint Retrospective.html">Sprint Retrospective</a></td>
+          <td>&nbsp;<!-- related in-class activities --></td>
+          <td><span class="datefont">START OF CLASS </span><a href="../topics/Sprint Retrospective.html#ex_retro_q">Sprint retrospective - quiz</a><br/><br/>
+            <span class="datefont">START OF CLASS </span><a href="../topics/Sprint Retrospective.html#ex_retro_items_i">Sprint retrospective items - individual</a><br/>
+           </td>
+    </tr>
+
+    <tr class="constructionlight">
+      <td id="session19" colspan="3"><div style="font-size:medium">Session 19<br>
+      <strong>Tues</strong>day, Mar 28</div></td>
+    </tr>
+
+    <tr class="constructionlight">
+      <td><a href="../topics/Project Presentation.html">Making Project presentations</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td> <span class="datefont">START OF CLASS</span> <a href="../topics/Sprint Retrospective.html#ex_retro_analysis_t">Sprint retrospective analysis - team</a><br/><br/>
+           <span class="datefont">START OF CLASS</span> <a href="../topics/Sprint Retrospective.html#ex_retro_plan_s3">Sprint retrospective action plan - team</a><span class="datefont"> </span><br/></td>
+
+    </tr>
+    <tr class="constructionlight endofweek">
+      <td><a href="../topics/Sequence Diagrams.html">Sequence diagrams</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../topics/Sequence Diagrams.html#ex_seq_t">Sequence diagrams - team</a><strong>*ask Instructor when due</strong></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Sequence Diagrams.html#ex_seq_q">Sequence diagrams - quiz</a><br/><br/>
+    </tr>
+
+    <tr class="constructiondark">
+      <td id="session20" colspan="3"><div style="font-size:medium">
+      Session 20<br>
+      <strong>Thurs</strong>day, Mar 30</div></td>
+    </tr>
+
+
+    <tr class="constructiondark endofweek">
+      <td><a href="../topics/Code Metrics.html">Software Metrics and Measurement</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Code Metrics.html#ex_static_exe_i">Static Code Analysis - team</a></td>
+      <td><span class="datefont">START OF CLASS</span> <a href="../topics/Code Metrics.html#ex_static_setup_i">Static Code Analysis Tool Setup</a></td>
+    </tr>
+
+
+    <tr class="constructionlight">
+      <td id="session21" colspan="3"><div style="font-size:medium">
+      Session 21<br>
+      <strong>Tues</strong>day, Apr 4</div></td>
+    </tr>
+
+    <tr class="constructionlight endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../activities/Acceptance Testing/index.html#ex_cross_team">Cross-team acceptance testing</a></td>
+      <td>
+        <span class="datefont"><br>BEFORE today's class<br>Apr 4 </span>
+        <a href="../activities/Acceptance Testing/index.html#ex_test_plan_t">Acceptance test plan - team</a>
+        <br><br>
+        <span class="datefont"><br>end-of-class<br>Apr 4 </span> <a href="../activities/Acceptance Testing/index.html#ex_test_results_t">Acceptance test <strong>results</strong> - team</a></td>
+    </tr>
+    
+
+    <tr class="constructiondark">
+      <td id="session22" colspan="3"><div style="font-size:medium">
+      Session 22<br>
+      <strong>Thurs</strong>day, Apr 6</div></td>
+    </tr>
+  
+    <tr class="constructiondark endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td>
+       <!--<a href="../projects/Sprint_3_details.html">Final Preparations and expectations for Sprint 3</a><br/>--> 
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../projects/Sprint3 demos.html#ex_sprint_demo">Sprint 3 demos</a><br/>
+          <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../projects/Sprint planning.html#ex_plan_s4">Sprint 4 planning</a></td>
+      </td>
+      <td>   
+        <span class="datefont">START OF CLASS</span><a href="../projects/Sprint_3_details.html"><b> Sprint 3 due</b></a><br/><br/>
+        <span class="datefont">Apr 11 </span> <a href="../projects/Sprint planning.html#ex_plan_s4">Sprint 4 plan - team</a></td>
+      </td>
+    </tr>
+
+
+    <tr id="week13"class="transition">
+      <td colspan="3" id="transition"><div align="center" style="font-size:large"><a href="#transition_explain" rel="modal:open">Transition</a></div></td>
+    </tr>
+
+    <tr class="transitionlight">
+      <td id="session23" colspan="3"><div style="font-size:medium">
+      Session 23<br>
+      <strong>Tues</strong>day, Apr 11</div></td>
+    </tr>
+    <tr class="transitionlight">
+      <td><a href="../topics/OpenUP Phases.html#ConstructionPhase">Introduction to Transition</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td>&nbsp;<!-- deliverables --></td>
+    </tr>
+
+<!-- moved Beyond scrum a week up -->
+    <tr class="transitionlight endofweek">
+      <td><a href="../topics/Professional Responsibility.html">Professional responsibility</a></td>
+      <td>&nbsp;<!-- related in-class activities --></td>
+      <td>
+        <span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="../topics/Professional Responsibility.html#ex_prof_resp_q">Professional responsibility - quiz</a><br/>
+
+      </td>
+    </tr>
+    
+
+   <tr class="transitiondark">
+      <td id="session24" colspan="3"><div style="font-size:medium">
+      Session 24<br>
+      <strong>Thurs</strong>day, Apr 13</div></td>
+    </tr>
+    <tr class="transitiondark endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../activities/Design Documentation/Cross team review.html#ex_design_review_i">Cross-team Design Document Review</a></td>
+       </td>
+      <td><span class="datefont"><br>BEFORE today's class<br>Apr 13 </span>
+        <a href="../activities/Design Documentation/Cross team review.html#ex_design_doc_upload_i">Design Document Review - team</a>
+       </td>
+    </tr>
+
+    <tr class="transitionlight">
+      <td id="session25" colspan="3"><div style="font-size:medium">
+      Session 25<br>
+      <strong>Tues</strong>day, Apr 18</div></td>
+    </tr>
+
+<!-- swapped and moved up Professional responsibility one week earlier -->
+    <tr class="transitionlight endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+       <td><span class="datefont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../slides/Beyond Scrum.pdf">Beyond Scrum</b><strong></strong></a>
+       </br>
+
+      <td>
+        <strong>
+          <!--span class="datefont">Nov 29</span> <a href="../projects/Sprint_4_details.html">Sprint 4</a><br/-->
+        </strong>  
+        <!--span class="datefont">Nov 22</span> <a href="../projects/Sprint planning.html#ex_plan_s4">Sprint 4 plan - team</a-->
+       <!-- kept this here -->
+       <span class="datefont">Apr 25 </span><a href="../projects/Individual Retrospective.docx">Individual retrospective - individual</a><br>
+          (clarify when with your instructor)
+      </td>
+    </tr>
+
+    <tr class="transitiondark">
+      <td id="session26" colspan="3"><div style="font-size:medium">
+      Session 26<br>
+      <strong>Thurs</strong>day, Apr 20</div></td>
+    </tr>
+
+
+    <tr class="transitiondark endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../projects/Sprint presentations.html#ex_sprint4_pres">Sprint 4 presentations</a><br/>
+       </td>
+      <td>        
+        <span class="datefont">START OF CLASS</span><a href="../projects/Sprint_4_details.html"><b> Sprint 4 due</b></a><br/>
+        <span class="datefont"></span> <a href="../topics/Code Metrics.html#ex_static_team_i"> Static Code Analysis - team-include in design documentation</a></td>
+      </td>
+    </tr>
+
+<!--
+    <tr style="font-weight:bold;" id="examrow">
+      <td id="sessionX" colspan="3"><div style="font-size:medium">
+* * Reminder-NO CLASSES WED->FRI Nov 23 to 25 - in observance of THANKSGIVING -</div></td>
+    </tr>
+-->
+    <tr class="transitionlight">
+      <td id="session27" colspan="3"><div style="font-size:medium">
+      Session 27<br>
+      <strong>Tues</strong>day, Apr 25</div></td>
+    </tr>
+    <tr class="transitionlight endofweek">
+      <td><a href="../projects/project.html">Term Project</a></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../projects/Sprint presentations.html#ex_sprint4_pres">Sprint 4 presentations <strong>(continued)</strong></a><br/><br>
+	      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../projects/Team Retrospective.docx">Team retrospective - team S4</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(clarify when with your instructor)
+
+      </td>
+      <td></td>
+    </tr>
+
+    <tr class="transitiondark">
+      <td id="session28" colspan="3"><div style="font-size:medium">
+      Session 28<br>
+      <strong>Thurs</strong>day, Apr 27</div></td>
+    </tr>
+ 
+    <tr class="transitiondark endofweek">
+      <td><a href="../exams/Final Exam Study Guide.html">Final Exam review</a></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://rit.smartevals.com">Course evaluations - individual</a></td>
+      <td>&nbsp;<!-- deliverables --></td>
+    </tr>
+
+<tr style="font-weight:bold;" id="examrow">
+      <td>Final Exam</td>
+      <td colspan="2" style="text-align:left;">
+        <br>
+<strong> <br>
+
+  <!--
+<table border="0">
+
+  <tr> 
+   <td class="examinfo" colspan="3" style="text-align:left;"> FOR FINAL <u>YOU MUST BRING</u>
+   <ul>
+    <li> Pencil and eraser
+    </li>
+    <li> 8.5x11" study sheet (optional)
+    </li>
+    <li> A Wi-fi enabled laptop!
+    </li>
+  </ul>
+    ^^^(contact your instructor ASAP before last class if this is an issue!)
+    <br><br>
+   </td>
+  </tr>
+  <tr>
+   <td class="examinfo" colspan="3" style="text-align:left;">
+  Date/Time: TBD
+    <br><br>
+  ALL SECTIONS same time but <u>DIFFERENT Locations</u> per list below:
+   </td>
+  </tr>  
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  01 - (Sudhir Khazanchi): Exam @ TBD
+          </td>
+  </tr>
+
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  02 - (Sudhir Khazanchi): Exam @ TBD
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  03 - (Sandra DeLaus): Exam @ TBD
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  04 - (Sandra DeLaus): Exam @ TBD
+          </td>
+  </tr>
+<tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  05 - (Kenn Martinez): Exam @ TBD
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  06 - (Anthony Audi): Exam @ TBD
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  07 - (Rui Ferreira): Exam @ TBD
+          </td>
+  </tr>
+  </table>
+ --> 
+ 
+ <!-- REVEAL THE ABOVE ONCE FINAL EXAM DATES HAVE BEEN FIRMED WITH REGISTRAR -->
+<!-- ---------------------------------------- -->
+
+<!--
+  5/10/2021 <br>
+  Tuesday <br>
+4:15PM - 6:45PM <br> -->
+</strong>
+<!-- Online -->
+<br><br>
+<table border="0">
+
+  <tr> 
+   <td class="examinfo" colspan="3" style="text-align:left;"> FOR FINAL <u>YOU MUST BRING</u>
+   <ul>
+    <li> Pencil and eraser
+    </li>
+    <li> 8.5x11" study sheet (optional)
+    </li>
+    <li> +?Fully charged Wi-fi enabled laptop!
+    </li>
+  </ul>
+    ^^^(contact your instructor ASAP before last class if this is an issue!)
+    <br><br>
+   </td>
+  </tr>
+  <tr>
+   <td class="examinfo" colspan="3" style="text-align:left;">
+  Date/Time/Location: TBD
+  <!--<u>MONDAY 12/12/2022 from 8:00am - 10:30am</u>
+    <br><br>
+  ALL SECTIONS same time and Location:
+    <br><br>
+James E Booth (BOO)-1350
+    <br><br>
+  -->
+          </td>
+  </tr>
+
+  </table>
+* Always check SIS for latest updates and notify Instructor of any Conflicts
+
+      <!--  <p><strong> 1:30pm - 4:00pm</strong></p>
+      <p><strong>Room numbers given to the right</strong></p></td>
+      <td class="examinfo" colspan="3" style="text-align:left;"> (Section  04 - TuTh 9:30 - 10:45am): GOL 2455</td>
+    </tr>
+    <tr class="examinfo">
+      <td colspan="3" style="text-align:left;"> (Section  05 - Lange - TuTh 8:00 - 9:15am): GOL 1400</td>
+    </tr>
+    <tr class="examinfo">
+      <td colspan="3" style="text-align:left;"> (Section  07 - Mansfield - TuTh 6:30 - 7:45pm): GOL 1435</td>
+    </tr>
+    <tr class="examinfo">
+      <td colspan="3" style="text-align:left;"> (Section  08 - Wake - TuTh 5:00 - 6:15pm): GOL 1400</td>
+    </tr>
+    <tr class="examinfo">
+      <td colspan="3" style="text-align:left;"> (Section  09 - Stumbo - TuTh 8:00 - 9:15am): GOL 1400</td>
+    </tr>
+    <tr class="examinfo">
+      <td colspan="3" style="text-align:left;"> (Section  10 - Delaus - TuTh 5:00 - 6:15pm): GOL 1610</td>
+    </tr>
+    <tr class="examinfo">
+      <td colspan="3" style="text-align:left;"> (Section  13 - Delaus - TuTh 6:30 - 7:45pm): GOL 1610</td>
+
+
+<tr>   </tr>
+   <tr>   </tr>
+   <tr>   </tr>
+   <tr>   </tr>
+   <tr>   </tr>
+   <tr>   </tr>
+   <tr>   </tr>
+   <tr>   </tr>   
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  02 - (Kenn Martinez): Exam @ GOL 1445
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  03 - (Sandra DeLaus): Exam @ GOL 1455
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  04 - (Larry Kiser): Exam @ GOL 1610
+          </td>
+  </tr>
+<tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  05 - (Sudhir Khazanchi): Exam @ GOL 3435
+          </td>
+  </tr>
+  <tr>
+          <td class="examinfo" colspan="3" style="text-align:left;"> Section  06 - (Michael Zaharkin ): Exam @ GOL 3455
+          </td>
+  </tr>
+
+      -->
+    </td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+<P></P>
+
+<footer>
+  <time title="Monday Feb 13, 2023 @ 14:56 [EST]"> Last Rev: <span>Monday February 13, 2023</span></time>
+</footer>
+</body>
+</html>
